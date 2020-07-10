@@ -16,30 +16,89 @@
 
 
 
-// let name = prompt("ما اسمك؟")
-// let age = prompt("كم عمرك؟")
-// let exp = prompt("كم عدد سنوات الخبرة لديك؟")
-// console.log("1. HTML")
-// console.log("2. CSS")
-// console.log("3. Javascript")
-// console.log("4. Swift")
-// console.log("5. Java")
-// console.log("6. php")
-// let code = prompt("اختار تتقنها من لغات البرمجة المذكورة بإدخال رقمها")
-// let codetwo = prompt("اختار لغة برمجة أخرى")
-// taskone()
-// function taskone (){
-//     if (40<age>25, exp >3, code <4, codetwo <4){
+
+
+
+
+// console.log("مرحبا بك في برنامج توظيف المبرمجين")
+
+// const languages = ["HTML","CSS", "JavaScript","PHP", "Swift", "Java"]
+// const needed_language = 3;
+
+// let name = prompt("ما اسمك؟");
+// let age = parseInt(prompt("كم عمرك؟"));
+// let experiance = parseInt(prompt("كم عدد سنوات الخبرة لديك؟"));
+// console.log(":لغات البرمجة")
+// console.log("1. " + languages[0]) 
+// console.log("2. " + languages[1])
+// console.log("3. " + languages[2])
+// console.log("4. " + languages[3])
+// console.log("5. " + languages[4])
+// console.log("6. " + languages[5])
+// let skill1 = prompt("اختار تتقنها من لغات البرمجة المذكورة بإدخال رقمها")
+// let skill2 = prompt("اختار لغة برمجة أخرى")
+
+
+
+// if (age > 25 && age < 40 && experiance > 3 && skill1 == needed_language ||  skill2 == needed_language)
+// {
 //       console.log(" تهانيا, تم قبولك يا" + name  )
 //     }else{
-//  console.log(" .ناسف, انت ليس رائعاً بشكل كافي لتعمل معنا")
+//  console.log(" .نأسف, انت ليس رائعاً بشكل كافي لتعمل معنا")
+// }
+
+//_____________________________________________________________________________
+
+
+
+
+// function logger(tempratures) {
+
+// for (let i = 0; i < tempratures.length; i++) {
+//      console.log(tempratures[i])
+//  }
+// };
+
+
+
+// function toCel(tempratures) {
+//     for (let i = 0; i < tempratures.length; i++) {
+//         result_array.push(parseInt(tempratures - 32) * (5/9));
 //     }
+// return result_array
 // }
 
 
 
 
 
+// function hottestdays(tempratures, min_value) {
+//   for (let i= 0; i < tempratures.length; i++) {
+//      if(tempratures[i] > min_value) {
+//          hot.push(tempratures[i]);
+//      }
+      
+//   }
+// return hot;
+// }
+
+
+
+// let feh_tremp_array = [32, 70, 99, 106]
+// let threshold = 70
+// let gt_threshold = [];
+// let hot = [];
+// let result_array = [];
+
+
+// function logHottestDays(input_array, min_value) {
+//    logger(toCel(hottestdays(input_array, min_value), result_array));
+// }
+
+// logHottestDays(feh_tremp_array, threshold)
+
+
+// //______________________________________________________________________________
 
 
 
@@ -50,6 +109,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//____________________________________________________________________________________
 
 // <!-- أن يكون عمره أكبر من 25 وأقل من 40 -->
 // <!-- أن تكون عنده سنوات خبرة تزيد عن 3 سنوات -->
@@ -84,22 +157,7 @@
 
 
 
-// let temp = [32, 70, 99 ,106];
-// console.log(temp)
-// console.log(temp[0])
-// console.log(temp[1])
-// console.log(temp[2])
-// console.log(temp[3])
-// console.log("--------------------------------------------")
-// temper(temp[0])
-// temper(temp[1])
-// temper(temp[2])
-// temper(temp[3])
 
-// function temper (x){
-//     console.log((x - 32) * 5/9)
-//     console.log("--------------------------------------------")  
-// }
 
 
 
@@ -142,23 +200,82 @@
 
 // <!-- المهمة الثالثة -->
 
+//________
 
 
 
 
-let grade = []
 
-let counter = 0;
 
-function grades(){
-grade.push = document.getElementById("input").value;
- counter = counter + grade[1] + grade[2] + grade[3] + grade [4];
-if( counter >= 90){
-    document.getElementById("gradenum").innerHTML= ("Your Numeric Grade Is : ") + counter;
-    document.getElementById("gradelt").innerHTML= ("Your Letter Grade Is : A");
-}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+// ____________________________________________________________________
+
+// let num = document.getElementById("input").value;
+
+// let grade = []
+
+// let add = []
+
+// function  grades(input) {
+//      for (let i = 0; i < num.length; i++) {
+//             grade.push = num
+//          add.push = grade[0] + grade[1] + grade[2] + grade[3]
+//          console.log(add)
+//      }
+//      if (add >= 90) {
+//          document.getElementById("gradenum").innerHTML = ("Your Numeric Grade Is : " + add)
+//          document.getElementById("gradelt").innerHTML = ("Your Grade Is : A")
+//      }ifelse (add >= 80); {
+//         document.getElementById("gradenum").innerHTML = ("Your Numeric Grade Is : " + add)
+//         document.getElementById("gradelt").innerHTML = ("Your Grade Is : B")
+//      }ifelse (add >= 70); {
+//         document.getElementById("gradenum").innerHTML = ("Your Numeric Grade Is : " + add)
+//         document.getElementById("gradelt").innerHTML = ("Your Grade Is : C")
+//      }ifelse (add >= 60); {
+//         document.getElementById("gradenum").innerHTML = ("Your Numeric Grade Is : " + add)
+//         document.getElementById("gradelt").innerHTML = ("Your Grade Is : D")
+//      }ifelse (add < 60); {
+//         document.getElementById("gradenum").innerHTML = ("Your Numeric Grade Is : " + add)
+//         document.getElementById("gradelt").innerHTML = ("Your Grade Is : F")
+//      }
+//      return add;
+// }
+
+
+
+
+//_________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
